@@ -5,6 +5,9 @@ public class SimulazioneDatabase {
 	
 	
 		
+	public void setDisponibilit‡InMagazzino(int disponibilit‡InMagazzino) {
+		Disponibilit‡InMagazzino = disponibilit‡InMagazzino;
+	}
 	public int getDisponibilit‡InMagazzino() {
 		return Disponibilit‡InMagazzino;
 	}
