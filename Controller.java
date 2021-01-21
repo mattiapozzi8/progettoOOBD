@@ -4,8 +4,8 @@ public class Controller {
 
 	FinestraDisponibilit‡ Disp;
 	SimulazioneDatabase Sim;
-	public int NuovaDisponibilit‡;
-	public int PrezzoTotale;
+	public double NuovaDisponibilit‡;
+	public double PrezzoTotale;
 	
 	
 	
@@ -20,18 +20,28 @@ public class Controller {
 		Disp.setVisible(true);
 	}
 	
+//	public void RefreshFinestraDisponibilit‡(){
+//		Disp.setVisible(true);
+//		Disp.dispose();
+//		if(Sim.getDisponibilit‡InMagazzino()>0) {
+//			Disp = new FinestraDisponibilit‡(this);
+//			Disp.setVisible(true);
+//		}
+//	}
+//	
+	
 	public String CalcolaPrezzo() {
-		PrezzoTotale=((Disp.getPrezzoAlKiloInt())*(Disp.getQuantit‡DaSottrarreInt()));
+		PrezzoTotale=((Disp.getPrezzoAlKiloDouble())*(Disp.getQuantit‡DaSottrarreDouble()));
 		return ""+PrezzoTotale+"Ä";
 	}
 	
 	public String SottraiQuantit‡() {
-		if(Disp.getQuantit‡DaSottrarreInt()>Sim.getDisponibilit‡InMagazzino()) {
+		if(Disp.getQuantit‡DaSottrarreDouble()>Sim.getDisponibilit‡InMagazzino()) {
 			return"Non ci sono abbastanza scorte";
 		}
 		else {	
-		NuovaDisponibilit‡=((Sim.getDisponibilit‡InMagazzino())-(Disp.getQuantit‡DaSottrarreInt()));
-		Disp.setQuantit‡DaSottrarreInt(0);
+		NuovaDisponibilit‡=((Sim.getDisponibilit‡InMagazzino())-(Disp.getQuantit‡DaSottrarreDouble()));
+//		Disp.setQuantit‡DaSottrarreDouble(0);
 		if(NuovaDisponibilit‡>0) {
 		Sim.setDisponibilit‡InMagazzino(NuovaDisponibilit‡);
 		return ""+NuovaDisponibilit‡;
