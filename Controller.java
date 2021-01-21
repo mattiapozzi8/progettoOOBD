@@ -6,6 +6,7 @@ public class Controller {
 	SimulazioneDatabase Sim;
 	public double NuovaDisponibilità;
 	public double PrezzoTotale;
+	HomePage hp = new HomePage(this);
 	
 	
 	
@@ -17,7 +18,8 @@ public class Controller {
 	public Controller() {
 		Disp=new FinestraDisponibilità(this);
 		Sim= new SimulazioneDatabase(this);
-		Disp.setVisible(true);
+		//Disp.setVisible(true);
+		hp.setVisible(true);
 	}
 	
 //	public void RefreshFinestraDisponibilità(){
