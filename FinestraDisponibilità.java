@@ -10,28 +10,29 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
 
 public class FinestraDisponibilit‡ extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField Quantit‡_TF;
 	public Controller IlController;
-	private int Quantit‡DaSottrarreInt;
+	private double Quantit‡DaSottrarreDouble;
 	private JTextField PrezzoAlKilo_TF;
 	private JTextField PrezzoTot_TF;
 	private JTextField DispInMagazzino_TF;
-	private int PrezzoAlKiloInt;
+	private double PrezzoAlKiloDouble;
 	
 	
-	public void setQuantit‡DaSottrarreInt(int quantit‡DaSottrarreInt) {
-		Quantit‡DaSottrarreInt = 0;
+	public void setQuantit‡DaSottrarreDouble(double quantit‡DaSottrarreDouble) {
+		Quantit‡DaSottrarreDouble = 0.0;
 	}
-	public int getQuantit‡DaSottrarreInt() {
-		return Quantit‡DaSottrarreInt;
+	public double getQuantit‡DaSottrarreDouble() {
+		return Quantit‡DaSottrarreDouble;
 	}
 	
-	public int getPrezzoAlKiloInt() {
-		return PrezzoAlKiloInt;
+	public double getPrezzoAlKiloDouble() {
+		return PrezzoAlKiloDouble;
 	}
 	
 
@@ -70,7 +71,7 @@ public class FinestraDisponibilit‡ extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String Quantit‡DaSottrarreString=Quantit‡_TF.getText();
 				try {
-					Quantit‡DaSottrarreInt = Integer.parseInt(Quantit‡DaSottrarreString);	
+					Quantit‡DaSottrarreDouble = Double.parseDouble(Quantit‡DaSottrarreString);	
 					//Quantit‡_TF.setText(null);
 				}
 				catch (NumberFormatException Nfe){
@@ -101,7 +102,7 @@ public class FinestraDisponibilit‡ extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				String PrezzoAlKiloString = PrezzoAlKilo_TF.getText();
 				try {
-					PrezzoAlKiloInt = Integer.parseInt(PrezzoAlKiloString);	
+					PrezzoAlKiloDouble = Double.parseDouble(PrezzoAlKiloString);	
 				}
 				catch (NumberFormatException Nfe){
 					System.err.println("");
@@ -136,5 +137,24 @@ public class FinestraDisponibilit‡ extends JFrame {
 		DispInMagazzino_TF.setBounds(165, 8, 250, 20);
 		contentPane.add(DispInMagazzino_TF);
 		DispInMagazzino_TF.setColumns(10);
+		
+		JButton AcquistaDiNuovoButton = new JButton("Acquista di nuovo");
+//		AcquistaDiNuovoButton.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent e) {
+//				
+//				String Ricopia1 = PrezzoTot_TF.getText();
+//				String Ricopia2= DispInMagazzino_TF.getText();
+//				Controller c= new Controller();
+//				c.RefreshFinestraDisponibilit‡();
+//				PrezzoTot_TF.setText(Ricopia1);
+//				DispInMagazzino_TF.setText(Ricopia2);
+//			}
+//		});
+		AcquistaDiNuovoButton.setBounds(268, 189, 147, 30);
+		contentPane.add(AcquistaDiNuovoButton);
+		
+		JButton TornaHomeButton = new JButton("Torna alla home");
+		TornaHomeButton.setBounds(268, 230, 147, 30);
+		contentPane.add(TornaHomeButton);
 	}
 }
