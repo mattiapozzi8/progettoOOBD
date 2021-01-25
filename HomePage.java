@@ -61,7 +61,7 @@ public class HomePage extends JFrame {
 				
 				case "Frutta":
 					c.hp.setVisible(false);
-				    //aprire jframe scelta frutta
+				    c.ApriFinestraFrutta();
 					
 				case "Verdura":
 					c.hp.setVisible(false);
