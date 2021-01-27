@@ -1,12 +1,16 @@
+import javax.swing.JDialog;
+import javax.swing.JTextField;
 
 public class Controller {
 	
 
-	FinestraDisponibilit‡ Disp=new FinestraDisponibilit‡(this);;
-	SimulazioneDatabase Sim=new SimulazioneDatabase(this);;
+	FinestraDisponibilit‡ Disp=new FinestraDisponibilit‡(this);
+	SimulazioneDatabase Sim=new SimulazioneDatabase(this);
 	public double NuovaDisponibilit‡;
 	public double PrezzoTotale=0.0;
 	HomePage hp = new HomePage(this);
+	AcquistareQuantit‡Minore PopUp=new AcquistareQuantit‡Minore(this);
+
 	
 	
 	
@@ -27,8 +31,26 @@ public class Controller {
 		Disp.setQuantit‡DaSottrarreDouble(0);
 	}
 	
+	public void ApriJDialogAcquistareQuantit‡Minore() {
+		try {
+			PopUp.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+			PopUp.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void ChiudiJDialogAcquistareQuantit‡Minore() {
+		PopUp.setVisible(false);
+	}
+	
+	public void JDialogOpzioneSi() {
+		
+	}
+	
 	public void TornaAllaHome() {
 		Disp.setVisible(false);
+		PopUp.setVisible(false);
 		hp.setVisible(true);
 	}
 
