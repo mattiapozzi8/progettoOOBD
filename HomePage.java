@@ -84,10 +84,6 @@ public class HomePage extends JFrame {
 				    //aprire jframe scelta confezionati
 				
 				}
-					
-				
-				
-				
 			}
 		});
 		HPNextButton.setBounds(335, 209, 89, 23);
