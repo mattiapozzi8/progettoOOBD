@@ -1,15 +1,16 @@
 
 public class SimulazioneDatabase {
 	public Controller IlController;
-	private double Disponibilit‡InMagazzino=100;
+	private double Disponibilit‡FruttaInMagazzino=100;
+	private double Disponibilit‡VerduraInMagazzino=100;
 	
 	
 		
 	public void setDisponibilit‡InMagazzino(double nuovaDisponibilit‡) {
-		Disponibilit‡InMagazzino = nuovaDisponibilit‡;
+		Disponibilit‡FruttaInMagazzino = nuovaDisponibilit‡;
 	}
 	public double getDisponibilit‡InMagazzino() {
-		return Disponibilit‡InMagazzino;
+		return Disponibilit‡FruttaInMagazzino;
 	}
 	
 

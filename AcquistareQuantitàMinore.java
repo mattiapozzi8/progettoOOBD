@@ -27,7 +27,7 @@ public class AcquistareQuantit‡Minore extends JDialog {
 		IlController=c;
 		
 		
-		setBounds(100, 100, 303, 142);
+		setBounds(100, 100, 326, 142);
 		getContentPane().setLayout(new BorderLayout());
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
@@ -35,38 +35,11 @@ public class AcquistareQuantit‡Minore extends JDialog {
 		{
 			txtDesideraAcquistarne = new JTextField();
 			txtDesideraAcquistarne.setEditable(false);
-			txtDesideraAcquistarne.setText("Desidera acquistarne una quantit\u00E0 minore? ");
+			txtDesideraAcquistarne.setText("Impossibile acquistare la quantit‡ da lei desiderata ");
 			txtDesideraAcquistarne.setHorizontalAlignment(SwingConstants.CENTER);
-			txtDesideraAcquistarne.setBounds(10, 11, 267, 33);
+			txtDesideraAcquistarne.setBounds(10, 31, 290, 41);
 			contentPanel.add(txtDesideraAcquistarne);
 			txtDesideraAcquistarne.setColumns(10);
-		}
-		{
-			JPanel buttonPane = new JPanel();
-			getContentPane().add(buttonPane, BorderLayout.SOUTH);
-			buttonPane.setLayout(new FlowLayout(FlowLayout.CENTER, 50, 5));
-			{
-				JButton SÏButton = new JButton("Si");
-				SÏButton.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e) {
-						
-					}
-				});
-				SÏButton.setHorizontalAlignment(SwingConstants.RIGHT);
-				SÏButton.setActionCommand("OK");
-				buttonPane.add(SÏButton);
-				getRootPane().setDefaultButton(SÏButton);
-			}
-			{
-				JButton NoButton = new JButton("No");
-				NoButton.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e) {
-						c.TornaAllaHome();
-					}
-				});
-				NoButton.setActionCommand("Cancel");
-				buttonPane.add(NoButton);
-			}
 		}
 	}
 

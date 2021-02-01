@@ -5,6 +5,7 @@ public class Frutta extends Prodotto{
 	private Date DataDiRaccolta;
 	private String Modalit‡DiConservazione;
 	
+	
 	public Date getDataDiRaccolta() {
 		return DataDiRaccolta;
 	}
@@ -12,6 +13,7 @@ public class Frutta extends Prodotto{
 		DataDiRaccolta = dataDiRaccolta;
 	}
 	public String getModalit‡DiConservazione() {
+		System.out.println(""+Modalit‡DiConservazione);
 		return Modalit‡DiConservazione;
 	}
 	public void setModalit‡DiConservazione(String modalit‡DiConservazione) {
