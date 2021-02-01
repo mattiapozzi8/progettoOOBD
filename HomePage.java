@@ -56,34 +56,38 @@ public class HomePage extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				tipo = (String) HPcomboBox.getSelectedItem();
+						
 				
-				switch(tipo) {
-				
-				case "Frutta":
+				if(tipo.equals("Frutta")) {
 					c.hp.setVisible(false);
 				    c.ApriFinestraFrutta();
-					
-				case "Verdura":
-					c.hp.setVisible(false);
-				    //aprire jframe scelta verdura
-					
-				case "Farinacei":
-					c.hp.setVisible(false);
-				    //aprire jframe scelta farinacei
-					
-				case "Latticini":
-					c.hp.setVisible(false);
-				    //aprire jframe scelta latticini
-					
-				case "Uova":
-					c.hp.setVisible(false);
-				    //aprire jframe scelta uova
-					
-				case "Confezionati":
-					c.hp.setVisible(false);
-				    //aprire jframe scelta confezionati
-				
 				}
+					
+				if(tipo.equals("Verdura")) {
+					c.hp.setVisible(false);
+				    c.ApriFinestraVerdura();
+				}
+				
+				if(tipo.equals("Farinacei")) {
+					c.hp.setVisible(false);
+				    c.ApriFinestraFarinacei();
+				}
+					
+				if(tipo.equals("Latticini")) {
+					c.hp.setVisible(false);
+				    c.ApriFinestraLatticini();
+				}
+				
+				if(tipo.equals("Uova")) {
+					c.hp.setVisible(false);
+				    c.ApriFinestraUova();
+				}
+				
+				if(tipo.equals("Confezionati")) {
+					c.hp.setVisible(false);
+				    c.ApriFinestraConfezionati();
+				}			
+				
 			}
 		});
 		HPNextButton.setBounds(335, 209, 89, 23);

@@ -10,9 +10,10 @@ public class Prodotto {
 	private double Quantità;
 	private Date DataDiScadenza;
 	
+	
 	public ArrayList<Carrello> IlCarrello= new ArrayList<Carrello>();
 	
-	ProdottoDAO prodDAO = new ProdottoDAO();
+	
 
 	public int getDisponibilità() {
 		return Disponibilità;
