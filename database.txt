@@ -1,0 +1,59 @@
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Pesca', 50, 'Orsero', nextval('id_pk'), 1.50, DATE '2021-03-24', DATE '2021-04-11', 'Conservate a temperatura ambiente', 'Frutta')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Ciliegia', 50, 'Valfrutta', nextval('id_pk'), 8.00, DATE '2021-03-20', DATE '2021-05-01', 'Conservate in un luogo fresco', 'Frutta')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Albicocca', 50, 'Del Monte', nextval('id_pk'), 5.00, DATE '2021-04-01', DATE '2021-05-12', 'Conservate in frigorifero', 'Frutta')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Arancia', 50, 'Orsero', nextval('id_pk'), 0.35, DATE '2021-04-06', DATE '2021-03-15', 'Conservate in frigorifero', 'Frutta')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Cavolfiore', 50, '/', nextval('id_pk'), 0.18, DATE '2021-04-02', DATE '2021-03-18', 'Conservate in un un luogo fresco', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Carote', 50, 'Valfrutta', nextval('id_pk'), 0.20, DATE '2021-04-10', DATE '2021-03-15', 'Conservate in un un luogo asciutto', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Spinaci', 50, '/', nextval('id_pk'), 0.85, DATE '2021-03-31', DATE '2021-03-01', 'Conservate in un un luogo asciutto', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Broccoli', 50, '/', nextval('id_pk'), 0.44, DATE '2021-04-16', DATE '2021-03-22', 'Conservate in un un luogo fresco', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Lattuga', 50, 'Bonduelle', nextval('id_pk'), 0.63, DATE '2021-04-14', DATE '2021-03-19', 'Conservate in frigorifero', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Carciofi', 50, '/', nextval('id_pk'), 0.45, DATE '2021-04-10', DATE '2021-03-15', 'Conservate in un luogo asciutto', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Pomodori', 50, 'Bonduelle', nextval('id_pk'),1.13, DATE '2021-04-23', DATE '2021-03-16', 'Conservate in un luogo fresco', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, modalita_conservazione, tipo)
+VALUES ('Cipolla', 50, '/', nextval('id_pk'), 0.27, DATE '2021-04-13', DATE '2021-03-10', 'Conservate in un luogo asciutto', 'Verdura')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_raccolta, data_deposizione, tipo)
+VALUES ('Uova', 50, '/', nextval('id_pk'), 0.30, DATE '2021-05-13', DATE '2021-03-31', DATE '2021-03-01', 'Uova')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Biscotti', 50, 'Mulino Bianco', nextval('id_pk'), 1.80, DATE '2021-05-25', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Latte', 50, 'Berna', nextval('id_pk'), 1.20, DATE '2021-04-02', DATE '2021-03-22', 'Italia', 'Latticini')
