@@ -1,0 +1,72 @@
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Pizza', 50, '/', nextval('id_pk'), 9.00, DATE '2021-05-20', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Pane', 50, '/', nextval('id_pk'), 3.00, DATE '2021-04-13', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Pasta', 50, 'Barilla', nextval('id_pk'), 1.50, DATE '2021-05-17', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Polenta', 50, 'Valsugana', nextval('id_pk'), 1.65, DATE '2021-05-28', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Farina 00', 50, 'Divella', nextval('id_pk'), 1.40, DATE '2021-05-01', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, tipo)
+VALUES ('Cereali', 50, 'Kelloggs', nextval('id_pk'), 1.20, DATE '2021-06-08', 'Farinacei')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Burro', 50, 'Granarolo', nextval('id_pk'), 2.50, DATE '2021-05-22', DATE '2021-03-15', 'Italia', 'Latticini')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Mozzarella', 50, 'Santa Lucia', nextval('id_pk'), 6.35, DATE '2021-04-29', DATE '2021-03-10', 'Italia', 'Latticini')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Yogurt', 50, 'Muller', nextval('id_pk'), 1.50, DATE '2021-05-13', DATE '2021-03-30', 'Germania', 'Latticini')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Formaggio', 50, 'Galbani', nextval('id_pk'), 2.70, DATE '2021-05-26', DATE '2021-03-17', 'Italia', 'Latticini')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Panna', 50, 'Chef', nextval('id_pk'), 1.40, DATE '2021-05-24', DATE '2021-03-22', 'Italia', 'Latticini')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_produzione, paese_condizionamento, tipo)
+VALUES ('Ricotta', 50, 'Santa Lucia', nextval('id_pk'), 7.30, DATE '2021-04-29', DATE '2021-03-31', 'Italia', 'Latticini')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_confezionamento, tipo)
+VALUES ('Caffè', 50, 'Kimbo', nextval('id_pk'), 7.80, DATE '2021-06-03', DATE '2021-04-21', 'Confezionati')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_confezionamento, tipo)
+VALUES ('Cioccolata', 50, 'Lindt', nextval('id_pk'), 8.00, DATE '2021-06-13', DATE '2021-04-20', 'Confezionati')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_confezionamento, tipo)
+VALUES ('Prosciutto', 50, 'San Daniele', nextval('id_pk'), 10.00, DATE '2021-05-01', DATE '2021-04-15', 'Confezionati')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_confezionamento, tipo)
+VALUES ('Mortadella', 50, 'Fiorucci', nextval('id_pk'), 11.40, DATE '2021-05-05', DATE '2021-04-20', 'Confezionati')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_confezionamento, tipo)
+VALUES ('Salame', 50, 'Fiorucci', nextval('id_pk'), 13.00, DATE '2021-05-07', DATE '2021-04-10', 'Confezionati')
+
+INSERT into prodotto
+(nome_prodotto, disponibilita, marca, codice_id, prezzo, data_scadenza, data_confezionamento, tipo)
+VALUES ('Gelato', 50, 'Algida', nextval('id_pk'), 2.00, DATE '2021-06-07', DATE '2021-04-12', 'Confezionati')
+
